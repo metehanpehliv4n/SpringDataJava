@@ -23,9 +23,7 @@ public class DataController {
     @GetMapping("/getById")
     public Optional<Data> getById(@RequestParam Long id) throws BadRequestException {
 
-        if (id==null){
-            throw new BadRequestException("Kaydedilecek bir bilgi gönderilsin.");
-        }
+       
         return dataService.getById(id);
     }
 
