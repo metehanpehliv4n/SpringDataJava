@@ -34,6 +34,7 @@ public class DataController {
         }
         return dataService.getSaveData(data);
     }
+    //kullanıcı bilgisi değiştirme
     @PutMapping("/editData")
     public Data getEditData(@RequestParam Long id, @RequestBody Data data){
         if (data==null){
@@ -45,7 +46,7 @@ public class DataController {
         }
         return dataService.getEditData(id,data);
     }
-
+    //kullanıcı bilgisi silme
     @DeleteMapping("/deleteData")
     public void getDeleteData(@RequestParam Long id){
         dataService.getDeleteData(id);
