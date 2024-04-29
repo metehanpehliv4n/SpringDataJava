@@ -23,7 +23,7 @@ public class DataController {
     @GetMapping("/getById")
     public Optional<Data> getById(@RequestParam Long id) throws BadRequestException {
 
-       
+        //if kontrolü eklenebilir
         return dataService.getById(id);
     }
 
