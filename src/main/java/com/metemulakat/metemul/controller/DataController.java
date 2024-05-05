@@ -26,7 +26,7 @@ public class DataController {
         //if kontrolü eklenebilir
         return dataService.getById(id);
     }
-
+    //yorum satiridir
     @PostMapping("/saveData")
     public Data getSaveData(@RequestBody Data data) throws BadRequestException {
         if (data==null){
